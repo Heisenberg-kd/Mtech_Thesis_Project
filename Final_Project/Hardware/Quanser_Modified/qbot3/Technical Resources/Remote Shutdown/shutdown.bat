@@ -1,0 +1,1 @@
+putty.exe -ssh pi@192.168.2.xxx -pw QuanserPi4 -m shutdown.sh
