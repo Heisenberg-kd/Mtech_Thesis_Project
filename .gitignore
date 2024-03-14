@@ -1,8 +1,10 @@
 *.asv
 *.slxc
+*.autosave
+*.zip
+
 slprj/
 cvx-w64/
-*.zip
 Quanser\ Helicopter/
 Original/
 Courseware\ Resources/
