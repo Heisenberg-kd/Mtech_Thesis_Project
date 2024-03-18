@@ -3,6 +3,7 @@
 *.autosave
 *.zip
 *.rar
+*.mexw64
 
 slprj/
 cvx-w64/
