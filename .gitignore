@@ -2,6 +2,7 @@
 *.slxc
 *.autosave
 *.zip
+*.rar
 
 slprj/
 cvx-w64/

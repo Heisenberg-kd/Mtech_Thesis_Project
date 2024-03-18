@@ -1,5 +1,5 @@
-function u_k = fcn(x)
-    coder.extrinsic('opt_problem');
+function u_k = test(x)
+
     H = [1,0,0];
     F = -1.5 ;
     
@@ -24,8 +24,9 @@ function u_k = fcn(x)
     P2 = 0;
 
     fun= @(Uk)Uk(:)'*P0*Uk(:);
+    opts = optimoptions('fmincon','Algorithm','sqp');
   nonlcon = @(Uk) constraint(Uk(:), P1, P2, q1, q2, r1, r2);
-  Uk = fmincon(fun,[5,5,9],[],[],[],[],[],[],nonlcon);
+  Uk = fmincon(fun,[5,5,9],[],[],[],[],[],[],nonlcon,opts);
     
     u_k = Uk(1:2);
 end
